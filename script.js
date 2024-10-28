@@ -111,7 +111,7 @@ const canvas = document.getElementById("canvas");
         let leftCollision = head.col === 0;
         let topCollision = head.row === 0;
         let rightCollision = head.col === widthInBlock - 1;
-        let bottomCollision = head.col === heightInBlock - 1;
+        let bottomCollision = head.row === heightInBlock - 1;
 
         let wallCollision =
           leftCollision || topCollision || rightCollision || bottomCollision;
